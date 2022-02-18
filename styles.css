@@ -163,10 +163,16 @@
 }
 
 .ev{
-    color:black;
+    color: blueviolet;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: x-large;
+    text-decoration: dashed;
 }
 .sub{
     color:black;
+    font-size: small;
+    text-transform: uppercase;
 }
 
 #intro{
@@ -178,8 +184,80 @@
 }
 .background-img{
     position: absolute;
-    z-index: -99;
-    height: 100vh;
-    width: 100vw;
+    height: 110%;
+    width: 89%;
 }
-
+.hr-tag{
+    width:200px; 
+    color: blueviolet;
+    padding-top: 1.7px;
+    margin-top: 30px;
+}
+.club-title{
+    font-size: xx-large;
+    font-family: 'Redressed', cursive;
+    letter-spacing: 1px;
+}
+.logo{
+    height: 30%;
+    width: 30%;
+}
+.box{
+    opacity: 77%;
+    margin-left: 35.5%;
+    margin-right: 35%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-style: solid;
+    border-color: peachpuff;
+    border-width: 3px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
+}
+.Register{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: blueviolet;
+    margin-left: 35.5%;
+    margin-right: 35%;
+    padding: 10px;
+}
+.das{
+    padding: 15px;
+    margin-left: 38%;
+    height: 25%;
+    width: 25%;
+}
+.gmc{
+    padding: 15px;
+    margin-left: 31%;
+    height: 40%;
+    width: 40%;
+}
+.neev{
+    padding: 15px;
+    margin-left: 2.5%;
+    height: 25%;
+    width: 25%;
+}
+.bigfm{
+    padding: 15px;
+    margin-left: 3%;
+    height: 25%;
+    width: 25%;
+}
+.mcf{
+    padding: 15px;
+    margin-left: 5%;
+    height: 25%;
+    width: 25%;
+}
+a:link{
+    text-decoration: none;
+}
