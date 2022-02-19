@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>W3.CSS Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/f33af43e20.js" crossorigin="anonymous"></script>
     <link  rel="stylesheet" href="styles.css" />
@@ -10,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://kit.fontawesome.com/3a1c629862.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -21,6 +25,38 @@
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
     </style>
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+
+<!-- Custom styles for this template -->
+<link href="footers.css" rel="stylesheet">
   </head>
 <body class="w3-black">
 
@@ -82,7 +118,8 @@
     ============================-->
     <section id="intro">
         <div class="bg">
-            <img class="background-img" src="img/indexpage/prizes.JPG" alt="Bg img">
+            <div class="background-img" style="color: black; opacity: 56%;"></div>
+            <img class="background-img" src="img/indexpage/bg.png" alt="Bg img">
         </div>
         <div class="intro-container">
             <div id="introCarousel" class="carousel  slide carousel-fade intro" data-ride="carousel">
@@ -96,14 +133,13 @@
                         <div class="carousel-container">
                             <div class="carousel-content pt-5">
                                 <center><img src="img/indexpage/mclogo.png" height="100vh" width="100vh"></center>
-                                <h2>Dhwani- Music Club, BIT Mesra<br> presents
-                                    <h2 style="font-weight: bolder; font-size: 60px;font-family: Kurale;">' नाद '
-                                    </h2>
-                                </h2>
-                                <p>The Annual Inter College Music Competition<br>BIT Mesra <br> 14th-28th March, 2021.
-                                </p>
+                                <br>
+                                <h2 class="club-title">Dhwani- Music Club, BIT Mesra<br> presents</h2>
+                                    <img src="img/indexpage/logo.png" class="logo">
+                                <p class="box">The Annual Inter College Music Competition<br>BIT Mesra<br>
+                                14th-28th March, 2021.</p><br><br>
                                 <!-- <a href="#about" class="btn-get-started scrollto">Know more about NAAD</a><br> -->
-                                <a href="registration.html" class="btn-get-started scrollto">Register!</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -149,27 +185,35 @@
     <!-- #intro -->
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64 proper-space" id="about">
-    <h2 class="w3-text-light-grey">About Us</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Music! Its feet stead fasted in the deepest of the seas and its head held high into the sky! Indeed, it’s something so pure, so serene! The melody of the primordial sound that leaves us enchanted, the sound of the cosmos and of human consciousness, a sound that transcends space and time, a sound that has no beginning or end, a sound that isn’t simply music, a sound that’s magic- NAAD!
 
-        Gear up folks, as Dhwani- Music Club, BIT Mesra returns with its annual inter-college music competition - NAAD! The wait is finally over and the excitement is going to take you on a roll! Get ready to witness music in its purest form through a series of electrifying events and competitions ranging from Hard-core metal rock to spellbinding tunes of Indian Classical Music! Scintillating nights and exhilarating events await!
-        
-        So prepare yourselves to hit the right notes, knock up your instruments to strike the right chords and get ready to flow in a mesmerizing musical journey with us!
-    </p>
+  
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 style="position: absolute; color: antiquewhite; font-family: 'Oswald', sans-serif; text-transform: uppercase;">About Us</h2>
+            <br>
+            <hr class = "hr-tag">
+            <p style="position:absolute; color: aliceblue; margin-right: 12%; font-size: small;" >Music! Its feet stead fasted in the deepest of the seas and its head held high into the sky! Indeed, it’s something so pure, so serene! The melody of the primordial sound that leaves us enchanted, the sound of the cosmos and of human consciousness, a sound that transcends space and time, a sound that has no beginning or end, a sound that isn’t simply music, a sound that’s magic- NAAD!
+>>>>>>> cf40ad4b9e0397e9a32697e280a79f63606cef81
     
+            Gear up folks, as Dhwani- Music Club, BIT Mesra returns with its annual inter-college music competition - NAAD! The wait is finally over and the excitement is going to take you on a roll! Get ready to witness music in its purest form through a series of electrifying events and competitions ranging from Hard-core metal rock to spellbinding tunes of Indian Classical Music! Scintillating nights and exhilarating events await!
+            
+            So prepare yourselves to hit the right notes, knock up your instruments to strike the right chords and get ready to flow in a mesmerizing musical journey with us!
+            </p>
+    </div>
    
   <!-- End About Section -->
-  </div>
+
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <!--
+      <div class="w3-padding-64 w3-content" id="photos">
+    <hr style="width:200px" class="hr-tag">
+    <h2 class="w3-text-light-grey" style="position: absolute;">My Photos</h2>
 
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <!--
+        div class="w3-row-padding" style="margin:0 -16px">
+        <br><br><br>
       <div class="w3-half">
         <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
         <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
@@ -182,13 +226,18 @@
         <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
         <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
       </div>
+     -->
+    
     <!-- End photo grid -->
     </div>
+   -->
+  
   <!-- End Portfolio Section -->
   </div>
 
 
   <div class="section-header">
+      <br><br><br>
     <h3>Timeline</h3>
 </div>
 
@@ -209,7 +258,10 @@
 
                 </div>
                 <div class="timeline-content">
+
                     <h2 style="font-weight: bold;">14th March</h2>
+=======
+
                     <p class="ev">
                         <br> ENTRY SUBMISSION STARTS <br>
                         <span class="sub">
@@ -236,7 +288,7 @@
                 </div>
 
                 <div class="timeline-content right">
-                    <h2>16th March</h2>
+                    <h2 style="text-transform: uppercase; font-family: 'Oswald', sans-serif; letter-spacing: 2px;">16th March</h2>
                     <p class="ev">
                         <br> LAST DATE OF SUBMISSION <br>
                         <span class="sub">
@@ -260,7 +312,7 @@
 
                 </div>
                 <div class="timeline-content">
-                    <h2>19th March</h2>
+                    <h2 style="text-transform: uppercase; font-family: 'Oswald', sans-serif; letter-spacing: 2px;">19th March</h2>
                     <p class="ev">
                         <br> ANTAKSHARI <br>
                         <span class="sub">
@@ -285,7 +337,7 @@
 
                 </div>
                 <div class="timeline-content right">
-                    <h2>20th March</h2>
+                    <h2 style="text-transform: uppercase; font-family: 'Oswald', sans-serif; letter-spacing: 2px;">20th March</h2>
                     <p class="ev">
                         <br> LAST DATE OF ENTRY SUBMISSION <br>
                         <span class="sub">
@@ -307,7 +359,7 @@
 
                 </div>
                 <div class="timeline-content">
-                    <h2>28th March</h2>
+                    <h2 style="text-transform: uppercase; font-family: 'Oswald', sans-serif; letter-spacing: 2px;">28th March</h2>
                     <p class="ev">
                         <br> NISHAAD <br>
                         <span class="sub">
@@ -333,15 +385,40 @@
             text-align: center;
             padding-left: 0;
         ">
-                <li class="data-one circliful" data-dimension="180" data-text="200+" data-info="REGISTRATIONS" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee">REGISTRATIONS</li>
+                <li class="data-one" data-dimension="180" data-text="200+" data-info="REGISTRATIONS" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee">
+                    <div class="align-text">
+                        <h1>200+</h1>
+                    <p>REGISTRATIONS</p>
+                    </div>
+                </li>
 
-                <li class="data-two circliful" data-dimension="180" data-text="250+" data-info="&nbsp;PARTICIPANTS" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee"></li>
+                <li class="data-two" data-dimension="180" data-text="250+" data-info="&nbsp;PARTICIPANTS" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee">
+                    <div class="align-text">
+                        <h1>250+</h1>
+                        <p>PARTICIPANTS</p>
+                    </div>
+                </li>
 
-                <li class="data-three circliful" data-dimension="180" data-text="950+" data-info="&emsp;&nbsp;FOOTFALL" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee"></li>
+                <li class="data-three" data-dimension="180" data-text="950+" data-info="&emsp;&nbsp;FOOTFALL" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee">
+                    <div class="align-text">
+                        <h1>950+</h1>
+                    <p>FOOTFALL</p>
+                    </div>
+                </li>
 
-                <li class="data-one circliful" data-dimension="180" data-text="&nbsp;15+" data-info="&emsp;SPONSORS" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee"></li>
+                <li class="data-one" data-dimension="180" data-text="&nbsp;15+" data-info="&emsp;SPONSORS" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee">
+                    <div class="align-text">
+                        <h1>950+</h1>
+                    <p>FOOTFALL</p>
+                    </div>
+                </li>
 
-                <li class="data-three circliful" data-dimension="180" data-text="30K+" data-info="PRIZES WORTH" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee"></li>
+                <li class="data-three" data-dimension="180" data-text="30K+" data-info="PRIZES WORTH" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#f6bb19" data-bgcolor="#eee">
+                    <div class="align-text">
+                        <h1>30K+</h1>
+                    <p>PRIZES WORTH</p>
+                    </div>
+                </li>
 
 
             </ul>
@@ -351,6 +428,8 @@
     </div>
 </section>
 
+
+ 
 
 
 <!--==========================
@@ -422,28 +501,28 @@ About Us Section
             </div>
 
          </div> -->
-        <div class="das-logo menu">
-            <img src="img/indexpage/sponsors/das.png" alt="">
+        <div class="das-logo">
+            <img src="img/indexpage/sponsors/das.png" class="das" alt="">
         </div>
-        <div class="gmc-logo menu">
+        <div class="gmc-logo">
             <a href="https://givemycertificate.com/">
-                <img src="img/indexpage/sponsors/gmc.png" alt="">
+                <img src="img/indexpage/sponsors/gmc.png" class="gmc" alt="">
             </a>
         </div>
         <br>
         <center>
-            <div class="neev-logo menu">
-                <img src="img/indexpage/sponsors/neev.png" alt="">
+            <div class="neev-logo">
+                <img src="img/indexpage/sponsors/neev.png" class="neev" alt="">
             </div>
         </center>
         <center>
-            <div class="bigfm-logo menu">
-                <img src="img/indexpage/sponsors/bigfm.png" alt="">
+            <div class="bigfm-logo">
+                <img src="img/indexpage/sponsors/bigfm.png" class="bigfm" alt="">
             </div>
         </center>
         <center>
-            <div class="mcf-logo menu">
-                <img src="img/indexpage/sponsors/mcf.jpg" alt="">
+            <div class="mcf-logo">
+                <img src="img/indexpage/sponsors/mcf.jpg" class="mcf" alt="">
             </div>
         </center>
 
@@ -453,41 +532,77 @@ About Us Section
 
 <!-- #about -->
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Us</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <!--==========================
+        Contact Section
+      ============================-->
+      <section id="contact" class="section-bg wow fadeInUp give-margin">
+        <div class="container">
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Music Room, near Bus depot, BIT Mesra-835215</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <p><a href="tel:+918252554962">+91 9899022486</a></p>
-      <p><a href="tel:+919608501172">+91 8210163701</a></p></p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: dhwani.bitmesra@gmail.com</p>
-    </div><br>
-    
-  </div>
+            <div class="section-header">
+                <h3>Contact Us</h3>
+
+            </div>
+
+            <div class="row contact-info">
+
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="ion-ios-location-outline"></i>
+                        <h3>Address</h3>
+                        <address>Music Room, near Bus depot, BIT Mesra-835215</address>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="ion-ios-telephone-outline"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+918252554962">+91 9899022486</a></p>
+                        <p><a href="tel:+919608501172">+91 8210163701</a></p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="ion-ios-email-outline"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:dhwani.bitmesra@gmail.com">dhwani.bitmesra@gmail.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- #contact -->
   
 
 
 <!-- END PAGE CONTENT -->
 </div>
 
-<footer id="footer" style="padding-bottom: 0px;;">
 
-    <div class="footer-copyright">
-        <div class="container">
-            <div class="row">
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1 align-line">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <p>© 2022 <a href="https://www.dhwanibitmesra.live" class="logo">Dhwani</a> All Rights Reserved. </p>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="fa-brands fa-instagram"></i></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="fa-brands fa-facebook"></i></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="fa-brands fa-youtube"></i></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-                <div class="col-md-6 col-sm-12">
-                    </center>
-                    <center>
-                        <p>© 2022 <a href="https://www.dhwanibitmesra.live" class="logo">Dhwani</a> All Rights Reserved. </p>
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
 
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>
