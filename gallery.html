@@ -1,73 +1,20 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <title>Image Gallery</title>
     <p class="outset"></p>
-    <style type="text/css" >
-      *{ padding: 0; margin: 0; box-sizing: border-box;}
-      
-      
-      h1{
-        color: #FFFF;
-        font-family: Helvetica, 'Open Sans', Arial, sans-serif;
-        font-size: 28px;
-        font-weight: bold;
-        text-align: center;
-        background-image: ;
-      }
-      .header{
-        padding: 40px;
-        text-align: center;
-        background: scroll;
-        color: azure;
-        font-size: 30px;
-        font: bolder;
-      }
-      body{
-        background: #262626;
-        padding: 10px;
-      }
-      .mesorny{
-        columns: 3;
-        column-gap: 10px;
-      }
-      img{
-        width: 100%;
-        border-radius: 10px;
-      }
-      .grid-images{
-        display: inline-block;
-        margin-bottom: 5px;
-        position: relative;
-        transition: 1s;
-      }
-      .grid-images:hover{
-        transform: scale(1.1);
-        z-index: 2;
-      }
-      @media (max-width: 1200px){
-        .mesorny{
-          columns: 2;
-        }
-      }
-      @media (max-width: 998px){
-        .mesorny{
-          columns: 2;
-        }
-      }
-      @media (max-width: 600px){
-        .mesorny{
-          columns: 1;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="gallery.css">
   </head>
   <body>
-    
-     <div class="header">
-       <h1>Gallery</h1>
+     
+
+     <div class="header" id="stickyHeader">
+       <h1><img src="images_gallery/Gallery.png" alt=""></h1>
      </div>      
     <div class="mesorny">
+      
+
       <div class="grid-images">
         <img src="images_gallery/naad11.jpg" alt="">
       </div>
@@ -141,10 +88,13 @@
       <div class="grid-images">
         <img src="images_gallery/naad38.jpg" alt="">
       </div>
-
+      
     </div>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+  </div>
 
-    
     
   </body>
+  
 </html>
