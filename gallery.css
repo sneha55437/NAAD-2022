@@ -6,10 +6,9 @@
 
 .gallery-container {
   margin: 0;
-  
+  margin-top: 0;
   margin-left: 120px;
   margin-right: 10px;
-  
 }
 
 h1 {
@@ -20,26 +19,31 @@ h1 {
   text-align: center;
   /* background-image: ; */
 }
-.header{
+.header {
+  margin: 0px;
+  padding: 20px 0;
   position: relative;
   text-align: center;
+  /* margin-bottom: 20px; */
 }
 
-.text{
+.heading {
+  margin: 0;
+}
+
+.text {
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* top: calc(50% - 30px); */
+  /* transform: translate(-50%, -50%); */
   font-size: larger;
 }
 
 body {
   background: #262626;
-  background-image: url('img/backgrounds/Gallery.png');
+  background-image: url("img/backgrounds/Gallery.png");
   background-color: #4b4949;
-  
-  
-   padding-top: 20px; 
 }
 .mesorny {
   columns: 3;
@@ -47,7 +51,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 1;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 img {
   width: 100%;
@@ -63,7 +67,7 @@ img {
   transform: scale(1.05);
   z-index: 1;
 }
-.mesorny:hover .grid-images :not(:hover){
+.mesorny:hover .grid-images :not(:hover) {
   opacity: 0.8;
 }
 
@@ -89,29 +93,27 @@ img {
     padding-right: 10px;
     margin-left: 0px;
     margin-right: auto;
-    
-   
+
     max-width: 100%;
   }
 }
-@media (max-width:1200px){
-  .text{
+@media (max-width: 1200px) {
+  .text {
     align-self: center;
   }
 }
-@media (max-width:998px){
-  .text{
+@media (max-width: 998px) {
+  .text {
     align-self: center;
   }
 }
-@media (max-width:600px){
-  .text{
+@media (max-width: 600px) {
+  .text {
     align-self: center;
   }
 }
-@media (max-width: 425px){
-  .text{
+@media (max-width: 425px) {
+  .text {
     padding-top: 20px;
   }
-
 }
