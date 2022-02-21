@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <style>
+
+      @font-face {
+        font-family: "Bebas-Regular";
+        src: url(font/Bebas-Regular.ttf);
+      }
+
       body,
       h1,
       h2,
@@ -71,6 +77,7 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <script src="events.js"></script>
 
     <!-- Fontawesome -->
     <script
@@ -116,7 +123,8 @@
     <link href="footers.css" rel="stylesheet" />
   </head>
 
-  <body class="w3-black">
+  <body background="img/backgrounds/Events_BG.png" class="w3-black">
+    <script src="events.js"></script>
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
       <!-- Avatar image in top left corner -->
@@ -133,7 +141,7 @@
         <p>EVENTS</p>
       </a>
       <a
-        href="index.html#about"
+        href="#about"
         class="w3-bar-item w3-button w3-padding-small w3-hover-black"
       >
         <i class="far fa-play-circle w3-xxlarge"></i>
@@ -195,37 +203,31 @@
       </div>
     </div>
 
+    <h1 class="heading">EVENTS</h1>
+
     <div class="event-grid-container">
       <div class="event-grid">
         <div class="card">
-          <img src="./img/portfolio/Hftw.jpg" class="card-img-top" alt="..." />
+          <p id="content">Dhwani-Music Club, BIT Mesra is back to grab your attention and soothe your ears with "NAAD", the most anticipated music fest of our year. Get your skates on to ride with us through the melodies of our official Facebook contest- "Hymn For The Weekend".
+
+            All you need to do is record a musical piece of yours, instrumental or vocal, follow the rules mentioned below and send in your video entry along with the necessary details through the link in bio. 
+            
+            Get ready to dazzle us with your musical skills and stand a chance to win exciting prizes!!
+          </p>
+          <img src="img/portfolio/Mandra_Mayhem_22.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Hymn For The Weekend</h5>
+            <h5 class="card-title">Mandra Mayhem</h5>
             <div class="buttons">
               <a href="#" class="btn">Register</a>
-              <a href="#" class="btn">Learn More</a>
+              <a class="btn" id="learn-more">Learn More</a>
             </div>
           </div>
         </div>
 
-        <div class="card">
-          <img
-            src="./src/images/bobs finaleeee.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Mandra Mayhem(Battle of Bands)</h5>
-            <div class="buttons">
-              <a href="#" class="btn">Register</a>
-              <a href="#" class="btn">Learn More</a>
-            </div>
-          </div>
-        </div>
 
         <div class="card">
           <img
-            src="./img/portfolio/Alankaar.jpg"
+            src="img/portfolio/Alankaar_22.png"
             class="card-img-top"
             alt="..."
           />
@@ -237,12 +239,27 @@
             </div>
           </div>
         </div>
+
+        <div class="card">
+          <img
+            src="img/portfolio/Euphony_22.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Euphony</h5>
+            <div class="buttons">
+              <a href="#" class="btn">Register</a>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="event-grid">
         <div class="card">
           <img
-            src="./src/images/dhunnn finall.png"
+            src="img/portfolio/Dhun_22.png"
             class="card-img-top"
             alt="..."
           />
@@ -256,21 +273,7 @@
         </div>
         <div class="card">
           <img
-            src="./src/images/euphony 08.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Euphony</h5>
-            <div class="buttons">
-              <a href="#" class="btn">Register</a>
-              <a href="#" class="btn">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./src/images/RAAGESHREE.png"
+            src="img/portfolio/Raageshree_22.png"
             class="card-img-top"
             alt="..."
           />
@@ -282,12 +285,9 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="event-grid">
         <div class="card">
           <img
-            src="./src/images/freestyle.png"
+            src="img/portfolio/Freestyle_22.png"
             class="card-img-top"
             alt="..."
           />
@@ -299,14 +299,31 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="event-grid">
         <div class="card">
           <img
-            src="./src/images/ANTAKSHARI.png"
+            src="img/portfolio/Hftw_22.png"
             class="card-img-top"
             alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Antakshari</h5>
+            <h5 class="card-title">ANTAKSHARI</h5>
+            <div class="buttons">
+              <a href="#" class="btn">Register</a>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="img/portfolio/Antakshari_22.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Hymn for the Weekend</h5>
             <div class="buttons">
               <a href="#" class="btn">Register</a>
               <a href="#" class="btn">Learn More</a>

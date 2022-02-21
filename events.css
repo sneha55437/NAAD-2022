@@ -19,6 +19,9 @@
   width: 20vw;
   background-color: #fbebc3;
 }
+.card-body{
+  background-color: #e9e9e9;
+}
 .card-img-top {
   border-radius: 20px;
 }
@@ -46,6 +49,7 @@
   font-family: "Staatliches", cursive;
   text-align: center;
   font-size: 1.5rem;
+  color: rgb(52, 19, 83);
 }
 
 .btn {
@@ -77,4 +81,24 @@
   .card {
     width: 33vw;
   }
+}
+
+.heading{
+  font-family: Bebas-Regular;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 300%;
+  letter-spacing: 5px;
+}
+
+#content{
+  position: absolute;
+  padding: 5px;
+  opacity: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+#content.clicked{
+  opacity: 1;
+  background-color: rgba(0,0,0, 0.5);
 }

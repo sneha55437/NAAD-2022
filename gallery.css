@@ -6,7 +6,10 @@
 
 .gallery-container {
   margin: 0;
-  padding-top: 2px;
+  
+  margin-left: 120px;
+  margin-right: 10px;
+  
 }
 
 h1 {
@@ -17,14 +20,34 @@ h1 {
   text-align: center;
   /* background-image: ; */
 }
+.header{
+  position: relative;
+  text-align: center;
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: larger;
+}
 
 body {
   background: #262626;
-  /* padding: 10px; */
+  background-image: url('img/backgrounds/Gallery.png');
+  background-color: #4b4949;
+  
+  
+   padding-top: 20px; 
 }
 .mesorny {
   columns: 3;
   column-gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+  padding-top: 40px;
 }
 img {
   width: 100%;
@@ -37,8 +60,11 @@ img {
   transition: 1s;
 }
 .grid-images:hover {
-  transform: scale(1.1);
-  z-index: 2;
+  transform: scale(1.05);
+  z-index: 1;
+}
+.mesorny:hover .grid-images :not(:hover){
+  opacity: 0.8;
 }
 
 @media (max-width: 1200px) {
@@ -53,6 +79,39 @@ img {
 }
 @media (max-width: 600px) {
   .mesorny {
-    columns: 1;
+    columns: 2;
   }
+}
+@media (max-width: 425px) {
+  .gallery-container {
+    columns: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-right: auto;
+    
+   
+    max-width: 100%;
+  }
+}
+@media (max-width:1200px){
+  .text{
+    align-self: center;
+  }
+}
+@media (max-width:998px){
+  .text{
+    align-self: center;
+  }
+}
+@media (max-width:600px){
+  .text{
+    align-self: center;
+  }
+}
+@media (max-width: 425px){
+  .text{
+    padding-top: 20px;
+  }
+
 }
