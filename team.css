@@ -1,0 +1,34 @@
+.container{
+    margin-top: 8%;
+}
+
+.inner{
+    overflow: hidden;
+
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.15);
+}
+
+.purple{
+    background-color: rgb(43, 9, 75);
+}
+
+.golden{
+    background-color: rgb(161 98 7);
+}
+
+.icon-cog {
+    color: black;
+  }
+
+.text{
+    background: linear-gradient(to right, #9374ED 0%, #cebfe0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

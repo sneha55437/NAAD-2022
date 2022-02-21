@@ -7,6 +7,10 @@
     text-align:center;
 }
 
+.carousel-content {
+    color: white;
+}
+
 #timeline .timeline-item:after, #timeline .timeline-item:before {
     content: '';
     display: block;
