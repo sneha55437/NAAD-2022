@@ -16,7 +16,7 @@
 
     <!-- CSS -->
     <link  rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="w3.css">
     
     <style>
         body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -39,6 +39,54 @@
             display: flex;
             justify-content: space-around;
         }
+
+        .navbar{
+            display: none !important;
+        }
+        @media (max-width: 600px){
+            .navbar{
+                display: block !important;
+            }
+        }
+
+        
+
+        @media (max-width: 600px){
+            .nav-text{
+                display: inline; 
+                position: absolute; 
+                top:15px;
+                margin-left: 10%;
+            }
+            .w3-sidebar{    
+                z-index: 90;
+                padding-top: 35px;}
+        }
+        @media (max-width: 450px){
+            
+            .nav-text{
+                margin-left: 20px;
+                font-size: 28px;
+            }
+        }
+
+        
+        @media (max-width: 392px){
+            .nav-logo{
+                display: none;
+            }
+            .nav-text{
+                top:12px;
+            }
+        }
+        @media (max-width: 330px){
+            .nav-text{
+                font-size: 25px;
+                margin-left: 5px;
+            }
+        }
+       
+        
         
         @media (min-width: 768px) {
           .bd-placeholder-img-lg {
@@ -47,7 +95,10 @@
         }
         /* Remove margins from "page content" on small screens */
         @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-        </style>
+
+
+
+    </style>
 
         <!-- Bootstrap core CSS -->
         <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -74,7 +125,7 @@
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"  id="navbarToggle">
   <!-- Avatar image in top left corner -->
   <img src="img/indexpage/NAAD.png" class="inc-size naadLogo" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
@@ -107,14 +158,28 @@
   </a>
 </nav>
 
+
+
+<nav class="navbar sticky-top navbar-dark bg-dark" style="display: flex; flex-direction: row;">
+    <button class="navbar-toggler" type="button" id="togglebtn" style="margin:0 13px">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <span>
+        <img class = "nav-logo" src="img/indexpage/mclogo.png" style="height:50px; width: 50px">
+    </span>
+    <h2 class="club-title nav-text">
+        Dhwani- Music Club
+    </h2>
+</nav>
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+
+  <!-- <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
+  </div> -->
 </div>
 
 <!-- Page Content -->
@@ -571,7 +636,23 @@ c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.99
   </div>
   <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <script>
+        const button = document.getElementById("togglebtn");
+        button.addEventListener("click", myFunction);
 
+        function myFunction() {
+            navbar = document.getElementById("navbarToggle")
+            if(!navbar.style.display || navbar.style.display == "none"){
+                navbar.style.display="block";  
+                console.log(`It is ${navbar.style.display}`);
+            }
+            else{
+                navbar.style.display="none";
+                console.log(`It is ${navbar.style.display}`)
+            }
+                
+        }
+    </script>
 </body>
 
 </html>
