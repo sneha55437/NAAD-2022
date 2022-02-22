@@ -7,13 +7,13 @@
   margin: 0;
 }
 
-.naadLogo{
-    margin: 20px 0px;
-    padding: 0 5px;
-  }
+.naadLogo {
+  margin: 20px 0px;
+  padding: 0 5px;
+}
 
 .container {
-  margin-top: 8%;
+  margin-top: 2%;
 }
 
 .inner {
@@ -45,6 +45,8 @@
 
 .heading {
   margin: 0;
+  padding-top: 35px;
+  padding-bottom: 20px;
 }
 
 .text {
@@ -52,7 +54,32 @@
   background: linear-gradient(to right, #fff 0%, #fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Bubblegum Sans', cursive;
+  font-family: "Bubblegum Sans", cursive;
+}
+
+.card-title {
+  /* color: #2b127f; */
+  color: black;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 180%;
+  font-weight: 900;
+}
+
+.card-text {
+  color: black;
+  font-family: "Satisfy", cursive;
+  font-size: 125%;
+  font-weight: 550;
+}
+
+.frame {
+  padding-left: 8%;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (max-width: 458px) {
@@ -67,23 +94,4 @@
   .frame {
     padding-left: 7%;
   }
-}
-
-.card-title {
-    /* color: #2b127f; */
-    color: black;
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 180%;
-    font-weight: 900;
-}
-
-.card-text {
-    color: black;
-    font-family: 'Satisfy', cursive;
-    font-size: 125%;
-    font-weight: 550;
-}
-
-.frame {
-    padding-left: 8%;
 }
