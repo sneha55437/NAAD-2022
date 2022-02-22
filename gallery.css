@@ -70,15 +70,16 @@ img {
   .mesorny {
     columns: 2;
   }
+  .text {
+    align-self: center;
+  }
 }
 @media (max-width: 998px) {
   .mesorny {
     columns: 2;
   }
-}
-@media (max-width: 600px) {
-  .mesorny {
-    columns: 2;
+  .text {
+    font-size: 5rem;
   }
 }
 @media (max-width: 425px) {
@@ -88,27 +89,11 @@ img {
     padding-right: 10px;
     margin-left: 0px;
     margin-right: auto;
-
     max-width: 100%;
   }
-}
-@media (max-width: 1200px) {
+
   .text {
-    align-self: center;
-  }
-}
-@media (max-width: 998px) {
-  .text {
-    align-self: center;
-  }
-}
-@media (max-width: 600px) {
-  .text {
-    align-self: center;
-  }
-}
-@media (max-width: 425px) {
-  .text {
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    font-size: 4rem;
   }
 }

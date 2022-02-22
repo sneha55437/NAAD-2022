@@ -5,8 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Google Font -->
     <link
@@ -86,51 +89,48 @@
         }
       }
 
-      .navbar{
-            display: none !important;
+      .navbar {
+        display: none !important;
+      }
+      @media (max-width: 600px) {
+        .navbar {
+          display: block !important;
         }
-        @media (max-width: 600px){
-            .navbar{
-                display: block !important;
-            }
-        }
+      }
 
-        
+      @media (max-width: 600px) {
+        .nav-text {
+          display: inline;
+          position: absolute;
+          top: 15px;
+          margin-left: 10%;
+        }
+        .w3-sidebar {
+          z-index: 90;
+          padding-top: 35px;
+        }
+      }
 
-        @media (max-width: 600px){
-            .nav-text{
-                display: inline; 
-                position: absolute; 
-                top:15px;
-                margin-left: 10%;
-            }
-            .w3-sidebar{    
-                z-index: 90;
-                padding-top: 35px;}
+      @media (max-width: 450px) {
+        .nav-text {
+          margin-left: 20px;
+          font-size: 28px;
         }
-
-        @media (max-width: 450px){
-            
-            .nav-text{
-                margin-left: 20px;
-                font-size: 28px;
-            }
+      }
+      @media (max-width: 392px) {
+        .nav-logo {
+          display: none;
         }
-        @media (max-width: 392px){
-            .nav-logo{
-                display: none;
-            }
-            .nav-text{
-                top:12px;
-            }
+        .nav-text {
+          top: 12px;
         }
-        @media (max-width: 330px){
-            .nav-text{
-                font-size: 25px;
-                margin-left: 5px;
-            }
+      }
+      @media (max-width: 330px) {
+        .nav-text {
+          font-size: 25px;
+          margin-left: 5px;
         }
-
+      }
     </style>
 
     <!-- Bootstrap core CSS -->
@@ -189,7 +189,10 @@
   <body background="img/backgrounds/Events_BG.png" class="w3-black">
     <script src="events.js"></script>
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"  id="navbarToggle">
+    <nav
+      class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"
+      id="navbarToggle"
+    >
       <!-- Avatar image in top left corner -->
       <img
         src="img/indexpage/NAAD.png"
@@ -244,50 +247,19 @@
       </a>
     </nav>
 
-
-    <nav class="navbar sticky-top navbar-dark bg-dark" style="display: flex; flex-direction: row;">
-      <button class="navbar-toggler" type="button" id="togglebtn" style="margin:0 13px">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <span>
-          <img class = "nav-logo" src="img/indexpage/mclogo.png" style="height:50px; width: 50px">
-      </span>
-      <h2 class="club-title nav-text">
-          Dhwani- Music Club
-      </h2>
-  </nav>
-
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-      <!-- <div
-        class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
+    <nav
+      class="navbar sticky-top navbar-dark bg-dark"
+      style="display: flex; flex-direction: row"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        id="togglebtn"
+        style="margin: 0 13px"
       >
-        <a
-          href="index.html"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
-          >HOME</a
-        >
-        <a
-          href="#about"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
-          >ABOUT</a
-        >
-        <a
-          href="#photos"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
-          >PHOTOS</a
-        >
-        <a
-          href="#contact"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
-          >CONTACT</a
-        >
-      </div> -->
-    </div>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
 
     <h1 class="heading">EVENTS</h1>
     <div class="event-grid-container">
@@ -298,9 +270,8 @@
           <div class="card-body">
             <h5 class="card-title">Stay Tuned</h5>
             <!-- <p>Flagship Event</p> -->
-            <div class="buttons">
+            <!-- <div class="buttons">
               <a href="#" class="btn">Register</a>
-              <!-- <a class="btn" id="learn-more">Learn More</a> -->
               <button
                 type="button"
                 class="btn"
@@ -309,7 +280,7 @@
               >
                 Learn More
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -521,17 +492,15 @@
       button.addEventListener("click", myFunction);
 
       function myFunction() {
-          navbar = document.getElementById("navbarToggle")
-          if(!navbar.style.display || navbar.style.display == "none"){
-              navbar.style.display="block";  
-              console.log(`It is ${navbar.style.display}`);
-          }
-          else{
-              navbar.style.display="none";
-              console.log(`It is ${navbar.style.display}`)
-          }
-              
+        navbar = document.getElementById("navbarToggle");
+        if (!navbar.style.display || navbar.style.display == "none") {
+          navbar.style.display = "block";
+          console.log(`It is ${navbar.style.display}`);
+        } else {
+          navbar.style.display = "none";
+          console.log(`It is ${navbar.style.display}`);
+        }
       }
-  </script>
+    </script>
   </body>
 </html>

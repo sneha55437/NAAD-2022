@@ -144,6 +144,7 @@
 
 @media screen and (max-width: 768px) {
   .heading {
+    padding: 10px 0;
     font-size: 5rem;
   }
   .card {
@@ -163,5 +164,8 @@
   .event-modal-body {
     margin: 5px;
     font-size: 12px;
+  }
+  .heading {
+    fz4rem
   }
 }
