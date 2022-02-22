@@ -38,7 +38,8 @@ h1 {
   left: 50%;
   /* top: calc(50% - 30px); */
   /* transform: translate(-50%, -50%); */
-  font-size: larger;
+  font-size: 7rem;
+  font-family: 'Bubblegum Sans', cursive;
 }
 
 body {
@@ -52,7 +53,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 1;
-  padding-top: 60px;
+  padding-top: 200px;
 }
 img {
   width: 100%;
@@ -69,7 +70,7 @@ img {
   z-index: 1;
 }
 .mesorny:hover .grid-images :not(:hover) {
-  opacity: 0.8;
+  opacity: 0.95;
 }
 
 @media (max-width: 1200px) {

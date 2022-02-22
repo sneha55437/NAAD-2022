@@ -22,6 +22,8 @@
 
 .inner img {
   transition: all 1.5s ease;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .inner:hover img {
@@ -47,9 +49,10 @@
 
 .text {
   font-size: 7rem;
-  background: linear-gradient(to right, #9374ed 0%, #cebfe0 100%);
+  background: linear-gradient(to right, #fff 0%, #fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: 'Bubblegum Sans', cursive;
 }
 
 @media screen and (max-width: 458px) {
@@ -69,12 +72,16 @@
 .card-title {
     /* color: #2b127f; */
     color: black;
-    font-family: 'Shizuru', cursive;
-    font-weight: 600;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 180%;
+    font-weight: 900;
 }
 
 .card-text {
     color: black;
+    font-family: 'Satisfy', cursive;
+    font-size: 125%;
+    font-weight: 550;
 }
 
 .frame {
