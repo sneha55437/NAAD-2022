@@ -126,6 +126,22 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.event-modal {
+  color: black;
+}
+
+.event-modal-title {
+  font-size: 25px;
+  margin: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+.event-modal-body {
+  margin: 15px;
+  font-size: 16px;
+  font-family: "Bitter", serif;
+}
+
 @media screen and (max-width: 768px) {
   .heading {
     font-size: 5rem;
@@ -135,8 +151,17 @@
   }
 }
 
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 415px) {
   .card {
     width: 250px;
+  }
+  .event-modal-title {
+    margin: 5px;
+    font-size: 18px;
+  }
+
+  .event-modal-body {
+    margin: 5px;
+    font-size: 12px;
   }
 }
