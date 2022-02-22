@@ -1,28 +1,43 @@
 .event-grid-container {
   padding-top: 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* left: calc(50% - 60px); */
 }
 
-.event-grid {
+/* .event-grid {
   width: 70vw;
   margin: 0px 15vw;
-  /* border: 1px solid white; */
   display: grid;
   justify-content: space-between;
   grid-gap: 10px;
   grid-auto-flow: column;
   margin-bottom: 100px;
+} */
+
+.main-event-wrapper {
 }
 
+.events-wrapper {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .card {
   border-radius: 25px 25px 25px 25px;
   width: 20vw;
+  min-width: 380px;
   background-color: #fbebc3;
   opacity: 0.85;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+  transition: all 0.4s ease-in-out;
 }
 .card-body {
   background-color: #e9e9e9;
@@ -36,6 +51,7 @@
 
 .card:hover {
   transform: translateY(-2px);
+  transform: scale(1.05);
   /* color: lightyellow; */
   --color1: rgb(255, 217, 0);
   --color2: orange;
@@ -87,20 +103,15 @@
   animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    width: 33vw;
-  }
-}
-
 .heading {
-  font-family: 'Bubblegum Sans', cursive;
+  font-family: "Bubblegum Sans", cursive;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 55px;
+  padding-top: 35px;
+  padding-bottom: 20px;
   margin: 0;
   font-size: 7rem;
   letter-spacing: 5px;
+  /* left: calc(50% - 60px); */
 }
 
 #content {
@@ -113,4 +124,19 @@
 #content.clicked {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 5rem;
+  }
+  .card {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .card {
+    width: 250px;
+  }
 }
