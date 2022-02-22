@@ -7,6 +7,11 @@
   margin: 0;
 }
 
+.naadLogo{
+    margin: 20px 0px;
+    padding: 0 5px;
+  }
+
 .container {
   margin-top: 8%;
 }
@@ -29,7 +34,7 @@
 }
 
 .golden {
-  background-color: rgb(161 98 7);
+  background-color: #c7f688;
 }
 
 .icon-cog {
@@ -53,6 +58,25 @@
   }
 
   .container {
-    width: 90%;
+    width: 80%;
   }
+
+  .frame {
+    padding-left: 7%;
+  }
+}
+
+.card-title {
+    /* color: #2b127f; */
+    color: black;
+    font-family: 'Shizuru', cursive;
+    font-weight: 600;
+}
+
+.card-text {
+    color: black;
+}
+
+.frame {
+    padding-left: 8%;
 }

@@ -20,6 +20,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="team.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
     <style>
         body,
         h1,
@@ -113,7 +116,7 @@
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
-        <img src="img/indexpage/NAAD.png" class="inc-size" style="width:100%">
+        <img src="img/indexpage/NAAD.png" class="inc-size naadLogo" style="width:100%">
         <a
           href="index.html"
           class="w3-bar-item w3-button w3-padding-small w3-hover-black"
@@ -126,7 +129,7 @@
           <p>EVENTS</p>
         </a>
         <a
-          href="#about"
+          href="index.html#about"
           class="w3-bar-item w3-button w3-padding-small w3-hover-black"
         >
           <i class="far fa-play-circle w3-xxlarge"></i>
@@ -143,12 +146,12 @@
           <i class="fa-solid fa-podcast w3-xxlarge"></i>
           <p>OUR TEAM</p>
         </a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+        <a href="index.html#sponsers" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
           <i class="fas fa-headphones w3-xxlarge"></i>
           <p>SPONSORS</p>
         </a>
         <a
-          href="#contact"
+          href="index.html#contact"
           class="w3-bar-item w3-button w3-padding-small w3-hover-black"
         >
           <i class="fas fa-microphone w3-xxlarge"></i>
@@ -194,10 +197,10 @@
                   <span class="text">OUR TEAM</span>
                 </h1>
           
-            
+                <!-- justify-content-center -->
             <div class="container">
-        <div class="row g-3 justify-content-center">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-6">
+        <div class="row g-3 frame">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-6 ">
                 <div class="card golden shadow">
                     <div class="inner"><img src="./images/Atvik.jpg" class="card-img-top" alt="Atvik"></div>
                     <div class="card-body text-center">
@@ -677,7 +680,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card golden shadow">
                     <div class="inner"><img src="./images/shiva.jpg" class="card-img-top" alt="Shiva"></div>
                     <div class="card-body text-center">
@@ -685,7 +688,7 @@
                         <div>
                             <p class="card-text">Vocalist</p>
                         <a href="https://www.linkedin.com/in/shiva-shantanu-507524201" target="_blank"><i class="place-self-end pr-3 h-30 fa-brands fa-linkedin icon-cog"></i></a>
-                        <a href="https://www.instagram.com/mystique__ac/" target="_blank"><i class="fa-brands fa-instagram-square icon-cog"></i></a>
+                        <a href="https://instagram.com/shivashantanu17?utm_medium=copy_link" target="_blank"><i class="fa-brands fa-instagram-square icon-cog"></i></a>
                         </div>
                     </div>
                 </div>
@@ -716,6 +719,51 @@
             </div>     
     </div>
 </div>
+<div class="container">
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1 align-line"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <p>
+          © 2022
+          <a href="https://www.dhwanibitmesra.live" class="logo">Dhwani</a>
+          All Rights Reserved.
+        </p>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="#"
+            ><svg class="bi" width="24" height="24">
+              <i class="fa-brands fa-instagram"></i></svg
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#"
+            ><svg class="bi" width="24" height="24">
+              <i class="fa-brands fa-facebook"></i></svg
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#"
+            ><svg class="bi" width="24" height="24">
+              <i class="fa-brands fa-youtube"></i></svg
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
